@@ -1,11 +1,10 @@
 ## Mars-Rover
 
-#Matlab
-
 Competition code for the MathWorks Mission on Mars Robot Challenge. https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html
 
 Obstacle avoidance (Fuzzy Logic) and mapping (Occupation Grids) algorithms.
 
+scholar team Project with Rémi Harvey at CentraleSupélec (2017).
 
 This Simulink project contains the files for the Mathworks Mars Rover robot competition 2015.
 
@@ -21,3 +20,7 @@ Arduino DUE Simulink support package is needed
 ================== Release Notes ==================
 
 31/03/2015 v1.0 First Release
+
+
+
+![alt text](https://raw.githubusercontent.com/gabides/mars-rover/master/mapping_resolution.png)
