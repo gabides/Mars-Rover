@@ -2,9 +2,9 @@
 
 Competition code for the MathWorks [Mission on Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html).
 
-**Obstacle avoidance** (Fuzzy Logic) and **mapping** (Occupation Grids) algorithms.
+Scholar team project with Rémi Harvey at CentraleSupélec (2017).
 
-scholar team Project with Rémi Harvey at CentraleSupélec (2017).
+We chose to study and develop **Obstacle avoidance** (Fuzzy Logic) and **mapping** (Occupation Grids) algorithms.
 
 This Simulink project contains the files for the Mathworks Mars Rover robot competition 2015.
 
