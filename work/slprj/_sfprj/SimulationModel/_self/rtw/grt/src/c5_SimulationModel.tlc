@@ -1,0 +1,78 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   10 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c5_SimulationModel"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_c5_SimulationModel"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_Running"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "Running"\
+    }\
+    ChartData {\
+      Name         "allowedRunTime"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "allowedRunTime"\
+    }\
+    ChartData {\
+      Name         "statTimeReq"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "statTimeReq"\
+    }\
+    ChartData {\
+      Name         "startingRadius"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "startingRadius"\
+    }\
+    ChartData {\
+      Name         "targetBoundaryRadius"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "targetBoundaryRadius"\
+    }\
+    ChartData {\
+      Name         "numTargetsFound"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "numTargetsFound"\
+    }\
+    ChartData {\
+      Name         "numTargets"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "numTargets"\
+    }\
+    ChartData {\
+      Name         "snapshotTime"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "snapshotTime"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

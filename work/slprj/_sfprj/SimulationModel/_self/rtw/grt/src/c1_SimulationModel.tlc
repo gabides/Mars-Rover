@@ -1,0 +1,103 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   14 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "ResetAnglePIEventCounter"\
+      Description  "OutputEventCounter"\
+      SFName       ""\
+      Path         "ResetAnglePI"\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_active_c1_SimulationModel"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_CurrentMove"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "CurrentMove"\
+    }\
+    ChartData {\
+      Name         "is_active_CurrentMove"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "CurrentMove"\
+    }\
+    ChartData {\
+      Name         "is_ModeControl"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "ModeControl"\
+    }\
+    ChartData {\
+      Name         "is_active_ModeControl"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "ModeControl"\
+    }\
+    ChartData {\
+      Name         "is_active_ErrorInitialCondition"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "ErrorInitialCondition"\
+    }\
+    ChartData {\
+      Name         "is_active_ResetIntegrator"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "ResetIntegrator"\
+    }\
+    ChartData {\
+      Name         "CurrentAngle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "CurrentAngle"\
+    }\
+    ChartData {\
+      Name         "EncodersZero"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "CurrentMove.EncodersZero"\
+      Dimensions   [2]\
+    }\
+    ChartData {\
+      Name         "PrevAngle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ModeControl.SpeedControl.PrevAngle"\
+    }\
+    ChartData {\
+      Name         "PrevCmd"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ResetIntegrator.PrevCmd"\
+    }\
+    ChartData {\
+      Name         "PrevMode"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "ResetIntegrator.PrevMode"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

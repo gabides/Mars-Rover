@@ -1,0 +1,84 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  0 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   11 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "is_active_c12_SimulationModel"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         ""\
+    }\
+    ChartData {\
+      Name         "is_LeftSensor"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "LeftSensor"\
+    }\
+    ChartData {\
+      Name         "is_active_LeftSensor"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "LeftSensor"\
+    }\
+    ChartData {\
+      Name         "is_RightSensor"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "RightSensor"\
+    }\
+    ChartData {\
+      Name         "is_active_RightSensor"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "RightSensor"\
+    }\
+    ChartData {\
+      Name         "is_MiddleSensor"\
+      Description  "StateActiveChild"\
+      SFName       ""\
+      Path         "MiddleSensor"\
+    }\
+    ChartData {\
+      Name         "is_active_MiddleSensor"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "MiddleSensor"\
+    }\
+    ChartData {\
+      Name         "is_active_Correction"\
+      Description  "StateIsActive"\
+      SFName       ""\
+      Path         "Correction"\
+    }\
+    ChartData {\
+      Name         "LeftObstacle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "LeftObstacle"\
+    }\
+    ChartData {\
+      Name         "RightObstacle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "RightObstacle"\
+    }\
+    ChartData {\
+      Name         "MiddleObstacle"\
+      Description  "ChartLocal"\
+      SFName       ""\
+      Path         "MiddleObstacle"\
+    }\
+  }
+  %return ChartDataElements
+%endfunction
