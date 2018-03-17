@@ -24,6 +24,6 @@ Arduino DUE Simulink support package is needed
 ![alt text](https://raw.githubusercontent.com/gabides/mars-rover/master/capture_robot.png)
 
 
-##Screen mapping results with different resolutions (n\*n) :
+> > **Screen mapping results with different resolutions (n\*n) :**
 
 ![alt text](https://raw.githubusercontent.com/gabides/mars-rover/master/mapping_resolution.png)
