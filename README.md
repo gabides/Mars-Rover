@@ -2,7 +2,7 @@
 
 Competition code for the MathWorks [Mission on Mars Robot Challenge](https://fr.mathworks.com/academia/student-challenge/mission-on-mars.html).
 
-Scholar team project with Rémi Harvey at CentraleSupélec (2017).
+Scholar team project with Rémi Harvey and Yujun Tian at CentraleSupélec (2017).
 
 We chose to study and develop **Obstacle avoidance** (Fuzzy Logic) and **mapping** (Occupation Grids) algorithms.
 
